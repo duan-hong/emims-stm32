@@ -1,0 +1,411 @@
+ARM GAS  C:\Users\ROG\AppData\Local\Temp\ccf5rf8y.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m3
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1
+   5              		.eabi_attribute 21, 1
+   6              		.eabi_attribute 23, 3
+   7              		.eabi_attribute 24, 1
+   8              		.eabi_attribute 25, 1
+   9              		.eabi_attribute 26, 1
+  10              		.eabi_attribute 30, 1
+  11              		.eabi_attribute 34, 1
+  12              		.eabi_attribute 18, 4
+  13              		.thumb
+  14              		.syntax unified
+  15              		.file	"stm32f1xx_it.c"
+  16              		.text
+  17              	.Ltext0:
+  18              		.cfi_sections	.debug_frame
+  19              		.section	.text.NMI_Handler,"ax",%progbits
+  20              		.align	2
+  21              		.global	NMI_Handler
+  22              		.thumb
+  23              		.thumb_func
+  25              	NMI_Handler:
+  26              	.LFB65:
+  27              		.file 1 "Core/Src/stm32f1xx_it.c"
+   1:Core/Src/stm32f1xx_it.c **** /* USER CODE BEGIN Header */
+   2:Core/Src/stm32f1xx_it.c **** /**
+   3:Core/Src/stm32f1xx_it.c ****   ******************************************************************************
+   4:Core/Src/stm32f1xx_it.c ****   * @file    stm32f1xx_it.c
+   5:Core/Src/stm32f1xx_it.c ****   * @brief   Interrupt Service Routines.
+   6:Core/Src/stm32f1xx_it.c ****   ******************************************************************************
+   7:Core/Src/stm32f1xx_it.c ****   * @attention
+   8:Core/Src/stm32f1xx_it.c ****   *
+   9:Core/Src/stm32f1xx_it.c ****   * <h2><center>&copy; Copyright (c) 2020 STMicroelectronics.
+  10:Core/Src/stm32f1xx_it.c ****   * All rights reserved.</center></h2>
+  11:Core/Src/stm32f1xx_it.c ****   *
+  12:Core/Src/stm32f1xx_it.c ****   * This software component is licensed by ST under BSD 3-Clause license,
+  13:Core/Src/stm32f1xx_it.c ****   * the "License"; You may not use this file except in compliance with the
+  14:Core/Src/stm32f1xx_it.c ****   * License. You may obtain a copy of the License at:
+  15:Core/Src/stm32f1xx_it.c ****   *                        opensource.org/licenses/BSD-3-Clause
+  16:Core/Src/stm32f1xx_it.c ****   *
+  17:Core/Src/stm32f1xx_it.c ****   ******************************************************************************
+  18:Core/Src/stm32f1xx_it.c ****   */
+  19:Core/Src/stm32f1xx_it.c **** /* USER CODE END Header */
+  20:Core/Src/stm32f1xx_it.c **** 
+  21:Core/Src/stm32f1xx_it.c **** /* Includes ------------------------------------------------------------------*/
+  22:Core/Src/stm32f1xx_it.c **** #include "main.h"
+  23:Core/Src/stm32f1xx_it.c **** #include "stm32f1xx_it.h"
+  24:Core/Src/stm32f1xx_it.c **** /* Private includes ----------------------------------------------------------*/
+  25:Core/Src/stm32f1xx_it.c **** /* USER CODE BEGIN Includes */
+  26:Core/Src/stm32f1xx_it.c **** /* USER CODE END Includes */
+  27:Core/Src/stm32f1xx_it.c **** 
+  28:Core/Src/stm32f1xx_it.c **** /* Private typedef -----------------------------------------------------------*/
+  29:Core/Src/stm32f1xx_it.c **** /* USER CODE BEGIN TD */
+  30:Core/Src/stm32f1xx_it.c **** 
+  31:Core/Src/stm32f1xx_it.c **** /* USER CODE END TD */
+ARM GAS  C:\Users\ROG\AppData\Local\Temp\ccf5rf8y.s 			page 2
+
+
+  32:Core/Src/stm32f1xx_it.c **** 
+  33:Core/Src/stm32f1xx_it.c **** /* Private define ------------------------------------------------------------*/
+  34:Core/Src/stm32f1xx_it.c **** /* USER CODE BEGIN PD */
+  35:Core/Src/stm32f1xx_it.c **** 
+  36:Core/Src/stm32f1xx_it.c **** /* USER CODE END PD */
+  37:Core/Src/stm32f1xx_it.c **** 
+  38:Core/Src/stm32f1xx_it.c **** /* Private macro -------------------------------------------------------------*/
+  39:Core/Src/stm32f1xx_it.c **** /* USER CODE BEGIN PM */
+  40:Core/Src/stm32f1xx_it.c **** 
+  41:Core/Src/stm32f1xx_it.c **** /* USER CODE END PM */
+  42:Core/Src/stm32f1xx_it.c **** 
+  43:Core/Src/stm32f1xx_it.c **** /* Private variables ---------------------------------------------------------*/
+  44:Core/Src/stm32f1xx_it.c **** /* USER CODE BEGIN PV */
+  45:Core/Src/stm32f1xx_it.c **** 
+  46:Core/Src/stm32f1xx_it.c **** /* USER CODE END PV */
+  47:Core/Src/stm32f1xx_it.c **** 
+  48:Core/Src/stm32f1xx_it.c **** /* Private function prototypes -----------------------------------------------*/
+  49:Core/Src/stm32f1xx_it.c **** /* USER CODE BEGIN PFP */
+  50:Core/Src/stm32f1xx_it.c **** 
+  51:Core/Src/stm32f1xx_it.c **** /* USER CODE END PFP */
+  52:Core/Src/stm32f1xx_it.c **** 
+  53:Core/Src/stm32f1xx_it.c **** /* Private user code ---------------------------------------------------------*/
+  54:Core/Src/stm32f1xx_it.c **** /* USER CODE BEGIN 0 */
+  55:Core/Src/stm32f1xx_it.c **** 
+  56:Core/Src/stm32f1xx_it.c **** /* USER CODE END 0 */
+  57:Core/Src/stm32f1xx_it.c **** 
+  58:Core/Src/stm32f1xx_it.c **** /* External variables --------------------------------------------------------*/
+  59:Core/Src/stm32f1xx_it.c **** 
+  60:Core/Src/stm32f1xx_it.c **** /* USER CODE BEGIN EV */
+  61:Core/Src/stm32f1xx_it.c **** 
+  62:Core/Src/stm32f1xx_it.c **** /* USER CODE END EV */
+  63:Core/Src/stm32f1xx_it.c **** 
+  64:Core/Src/stm32f1xx_it.c **** /******************************************************************************/
+  65:Core/Src/stm32f1xx_it.c **** /*           Cortex-M3 Processor Interruption and Exception Handlers          */
+  66:Core/Src/stm32f1xx_it.c **** /******************************************************************************/
+  67:Core/Src/stm32f1xx_it.c **** /**
+  68:Core/Src/stm32f1xx_it.c ****   * @brief This function handles Non maskable interrupt.
+  69:Core/Src/stm32f1xx_it.c ****   */
+  70:Core/Src/stm32f1xx_it.c **** void NMI_Handler(void)
+  71:Core/Src/stm32f1xx_it.c **** {
+  28              		.loc 1 71 0
+  29              		.cfi_startproc
+  30              		@ args = 0, pretend = 0, frame = 0
+  31              		@ frame_needed = 0, uses_anonymous_args = 0
+  32              		@ link register save eliminated.
+  33 0000 7047     		bx	lr
+  34              		.cfi_endproc
+  35              	.LFE65:
+  37 0002 00BF     		.section	.text.HardFault_Handler,"ax",%progbits
+  38              		.align	2
+  39              		.global	HardFault_Handler
+  40              		.thumb
+  41              		.thumb_func
+  43              	HardFault_Handler:
+  44              	.LFB66:
+  72:Core/Src/stm32f1xx_it.c ****   /* USER CODE BEGIN NonMaskableInt_IRQn 0 */
+  73:Core/Src/stm32f1xx_it.c **** 
+ARM GAS  C:\Users\ROG\AppData\Local\Temp\ccf5rf8y.s 			page 3
+
+
+  74:Core/Src/stm32f1xx_it.c ****   /* USER CODE END NonMaskableInt_IRQn 0 */
+  75:Core/Src/stm32f1xx_it.c ****   /* USER CODE BEGIN NonMaskableInt_IRQn 1 */
+  76:Core/Src/stm32f1xx_it.c **** 
+  77:Core/Src/stm32f1xx_it.c ****   /* USER CODE END NonMaskableInt_IRQn 1 */
+  78:Core/Src/stm32f1xx_it.c **** }
+  79:Core/Src/stm32f1xx_it.c **** 
+  80:Core/Src/stm32f1xx_it.c **** /**
+  81:Core/Src/stm32f1xx_it.c ****   * @brief This function handles Hard fault interrupt.
+  82:Core/Src/stm32f1xx_it.c ****   */
+  83:Core/Src/stm32f1xx_it.c **** void HardFault_Handler(void)
+  84:Core/Src/stm32f1xx_it.c **** {
+  45              		.loc 1 84 0
+  46              		.cfi_startproc
+  47              		@ Volatile: function does not return.
+  48              		@ args = 0, pretend = 0, frame = 0
+  49              		@ frame_needed = 0, uses_anonymous_args = 0
+  50              		@ link register save eliminated.
+  51              	.L3:
+  52 0000 FEE7     		b	.L3
+  53              		.cfi_endproc
+  54              	.LFE66:
+  56 0002 00BF     		.section	.text.MemManage_Handler,"ax",%progbits
+  57              		.align	2
+  58              		.global	MemManage_Handler
+  59              		.thumb
+  60              		.thumb_func
+  62              	MemManage_Handler:
+  63              	.LFB67:
+  85:Core/Src/stm32f1xx_it.c ****   /* USER CODE BEGIN HardFault_IRQn 0 */
+  86:Core/Src/stm32f1xx_it.c **** 
+  87:Core/Src/stm32f1xx_it.c ****   /* USER CODE END HardFault_IRQn 0 */
+  88:Core/Src/stm32f1xx_it.c ****   while (1)
+  89:Core/Src/stm32f1xx_it.c ****   {
+  90:Core/Src/stm32f1xx_it.c ****     /* USER CODE BEGIN W1_HardFault_IRQn 0 */
+  91:Core/Src/stm32f1xx_it.c ****     /* USER CODE END W1_HardFault_IRQn 0 */
+  92:Core/Src/stm32f1xx_it.c ****   }
+  93:Core/Src/stm32f1xx_it.c **** }
+  94:Core/Src/stm32f1xx_it.c **** 
+  95:Core/Src/stm32f1xx_it.c **** /**
+  96:Core/Src/stm32f1xx_it.c ****   * @brief This function handles Memory management fault.
+  97:Core/Src/stm32f1xx_it.c ****   */
+  98:Core/Src/stm32f1xx_it.c **** void MemManage_Handler(void)
+  99:Core/Src/stm32f1xx_it.c **** {
+  64              		.loc 1 99 0
+  65              		.cfi_startproc
+  66              		@ Volatile: function does not return.
+  67              		@ args = 0, pretend = 0, frame = 0
+  68              		@ frame_needed = 0, uses_anonymous_args = 0
+  69              		@ link register save eliminated.
+  70              	.L5:
+  71 0000 FEE7     		b	.L5
+  72              		.cfi_endproc
+  73              	.LFE67:
+  75 0002 00BF     		.section	.text.BusFault_Handler,"ax",%progbits
+  76              		.align	2
+  77              		.global	BusFault_Handler
+  78              		.thumb
+ARM GAS  C:\Users\ROG\AppData\Local\Temp\ccf5rf8y.s 			page 4
+
+
+  79              		.thumb_func
+  81              	BusFault_Handler:
+  82              	.LFB68:
+ 100:Core/Src/stm32f1xx_it.c ****   /* USER CODE BEGIN MemoryManagement_IRQn 0 */
+ 101:Core/Src/stm32f1xx_it.c **** 
+ 102:Core/Src/stm32f1xx_it.c ****   /* USER CODE END MemoryManagement_IRQn 0 */
+ 103:Core/Src/stm32f1xx_it.c ****   while (1)
+ 104:Core/Src/stm32f1xx_it.c ****   {
+ 105:Core/Src/stm32f1xx_it.c ****     /* USER CODE BEGIN W1_MemoryManagement_IRQn 0 */
+ 106:Core/Src/stm32f1xx_it.c ****     /* USER CODE END W1_MemoryManagement_IRQn 0 */
+ 107:Core/Src/stm32f1xx_it.c ****   }
+ 108:Core/Src/stm32f1xx_it.c **** }
+ 109:Core/Src/stm32f1xx_it.c **** 
+ 110:Core/Src/stm32f1xx_it.c **** /**
+ 111:Core/Src/stm32f1xx_it.c ****   * @brief This function handles Prefetch fault, memory access fault.
+ 112:Core/Src/stm32f1xx_it.c ****   */
+ 113:Core/Src/stm32f1xx_it.c **** void BusFault_Handler(void)
+ 114:Core/Src/stm32f1xx_it.c **** {
+  83              		.loc 1 114 0
+  84              		.cfi_startproc
+  85              		@ Volatile: function does not return.
+  86              		@ args = 0, pretend = 0, frame = 0
+  87              		@ frame_needed = 0, uses_anonymous_args = 0
+  88              		@ link register save eliminated.
+  89              	.L7:
+  90 0000 FEE7     		b	.L7
+  91              		.cfi_endproc
+  92              	.LFE68:
+  94 0002 00BF     		.section	.text.UsageFault_Handler,"ax",%progbits
+  95              		.align	2
+  96              		.global	UsageFault_Handler
+  97              		.thumb
+  98              		.thumb_func
+ 100              	UsageFault_Handler:
+ 101              	.LFB69:
+ 115:Core/Src/stm32f1xx_it.c ****   /* USER CODE BEGIN BusFault_IRQn 0 */
+ 116:Core/Src/stm32f1xx_it.c **** 
+ 117:Core/Src/stm32f1xx_it.c ****   /* USER CODE END BusFault_IRQn 0 */
+ 118:Core/Src/stm32f1xx_it.c ****   while (1)
+ 119:Core/Src/stm32f1xx_it.c ****   {
+ 120:Core/Src/stm32f1xx_it.c ****     /* USER CODE BEGIN W1_BusFault_IRQn 0 */
+ 121:Core/Src/stm32f1xx_it.c ****     /* USER CODE END W1_BusFault_IRQn 0 */
+ 122:Core/Src/stm32f1xx_it.c ****   }
+ 123:Core/Src/stm32f1xx_it.c **** }
+ 124:Core/Src/stm32f1xx_it.c **** 
+ 125:Core/Src/stm32f1xx_it.c **** /**
+ 126:Core/Src/stm32f1xx_it.c ****   * @brief This function handles Undefined instruction or illegal state.
+ 127:Core/Src/stm32f1xx_it.c ****   */
+ 128:Core/Src/stm32f1xx_it.c **** void UsageFault_Handler(void)
+ 129:Core/Src/stm32f1xx_it.c **** {
+ 102              		.loc 1 129 0
+ 103              		.cfi_startproc
+ 104              		@ Volatile: function does not return.
+ 105              		@ args = 0, pretend = 0, frame = 0
+ 106              		@ frame_needed = 0, uses_anonymous_args = 0
+ 107              		@ link register save eliminated.
+ 108              	.L9:
+ARM GAS  C:\Users\ROG\AppData\Local\Temp\ccf5rf8y.s 			page 5
+
+
+ 109 0000 FEE7     		b	.L9
+ 110              		.cfi_endproc
+ 111              	.LFE69:
+ 113 0002 00BF     		.section	.text.SVC_Handler,"ax",%progbits
+ 114              		.align	2
+ 115              		.global	SVC_Handler
+ 116              		.thumb
+ 117              		.thumb_func
+ 119              	SVC_Handler:
+ 120              	.LFB70:
+ 130:Core/Src/stm32f1xx_it.c ****   /* USER CODE BEGIN UsageFault_IRQn 0 */
+ 131:Core/Src/stm32f1xx_it.c **** 
+ 132:Core/Src/stm32f1xx_it.c ****   /* USER CODE END UsageFault_IRQn 0 */
+ 133:Core/Src/stm32f1xx_it.c ****   while (1)
+ 134:Core/Src/stm32f1xx_it.c ****   {
+ 135:Core/Src/stm32f1xx_it.c ****     /* USER CODE BEGIN W1_UsageFault_IRQn 0 */
+ 136:Core/Src/stm32f1xx_it.c ****     /* USER CODE END W1_UsageFault_IRQn 0 */
+ 137:Core/Src/stm32f1xx_it.c ****   }
+ 138:Core/Src/stm32f1xx_it.c **** }
+ 139:Core/Src/stm32f1xx_it.c **** 
+ 140:Core/Src/stm32f1xx_it.c **** /**
+ 141:Core/Src/stm32f1xx_it.c ****   * @brief This function handles System service call via SWI instruction.
+ 142:Core/Src/stm32f1xx_it.c ****   */
+ 143:Core/Src/stm32f1xx_it.c **** void SVC_Handler(void)
+ 144:Core/Src/stm32f1xx_it.c **** {
+ 121              		.loc 1 144 0
+ 122              		.cfi_startproc
+ 123              		@ args = 0, pretend = 0, frame = 0
+ 124              		@ frame_needed = 0, uses_anonymous_args = 0
+ 125              		@ link register save eliminated.
+ 126 0000 7047     		bx	lr
+ 127              		.cfi_endproc
+ 128              	.LFE70:
+ 130 0002 00BF     		.section	.text.DebugMon_Handler,"ax",%progbits
+ 131              		.align	2
+ 132              		.global	DebugMon_Handler
+ 133              		.thumb
+ 134              		.thumb_func
+ 136              	DebugMon_Handler:
+ 137              	.LFB71:
+ 145:Core/Src/stm32f1xx_it.c ****   /* USER CODE BEGIN SVCall_IRQn 0 */
+ 146:Core/Src/stm32f1xx_it.c **** 
+ 147:Core/Src/stm32f1xx_it.c ****   /* USER CODE END SVCall_IRQn 0 */
+ 148:Core/Src/stm32f1xx_it.c ****   /* USER CODE BEGIN SVCall_IRQn 1 */
+ 149:Core/Src/stm32f1xx_it.c **** 
+ 150:Core/Src/stm32f1xx_it.c ****   /* USER CODE END SVCall_IRQn 1 */
+ 151:Core/Src/stm32f1xx_it.c **** }
+ 152:Core/Src/stm32f1xx_it.c **** 
+ 153:Core/Src/stm32f1xx_it.c **** /**
+ 154:Core/Src/stm32f1xx_it.c ****   * @brief This function handles Debug monitor.
+ 155:Core/Src/stm32f1xx_it.c ****   */
+ 156:Core/Src/stm32f1xx_it.c **** void DebugMon_Handler(void)
+ 157:Core/Src/stm32f1xx_it.c **** {
+ 138              		.loc 1 157 0
+ 139              		.cfi_startproc
+ 140              		@ args = 0, pretend = 0, frame = 0
+ 141              		@ frame_needed = 0, uses_anonymous_args = 0
+ARM GAS  C:\Users\ROG\AppData\Local\Temp\ccf5rf8y.s 			page 6
+
+
+ 142              		@ link register save eliminated.
+ 143 0000 7047     		bx	lr
+ 144              		.cfi_endproc
+ 145              	.LFE71:
+ 147 0002 00BF     		.section	.text.PendSV_Handler,"ax",%progbits
+ 148              		.align	2
+ 149              		.global	PendSV_Handler
+ 150              		.thumb
+ 151              		.thumb_func
+ 153              	PendSV_Handler:
+ 154              	.LFB72:
+ 158:Core/Src/stm32f1xx_it.c ****   /* USER CODE BEGIN DebugMonitor_IRQn 0 */
+ 159:Core/Src/stm32f1xx_it.c **** 
+ 160:Core/Src/stm32f1xx_it.c ****   /* USER CODE END DebugMonitor_IRQn 0 */
+ 161:Core/Src/stm32f1xx_it.c ****   /* USER CODE BEGIN DebugMonitor_IRQn 1 */
+ 162:Core/Src/stm32f1xx_it.c **** 
+ 163:Core/Src/stm32f1xx_it.c ****   /* USER CODE END DebugMonitor_IRQn 1 */
+ 164:Core/Src/stm32f1xx_it.c **** }
+ 165:Core/Src/stm32f1xx_it.c **** 
+ 166:Core/Src/stm32f1xx_it.c **** /**
+ 167:Core/Src/stm32f1xx_it.c ****   * @brief This function handles Pendable request for system service.
+ 168:Core/Src/stm32f1xx_it.c ****   */
+ 169:Core/Src/stm32f1xx_it.c **** void PendSV_Handler(void)
+ 170:Core/Src/stm32f1xx_it.c **** {
+ 155              		.loc 1 170 0
+ 156              		.cfi_startproc
+ 157              		@ args = 0, pretend = 0, frame = 0
+ 158              		@ frame_needed = 0, uses_anonymous_args = 0
+ 159              		@ link register save eliminated.
+ 160 0000 7047     		bx	lr
+ 161              		.cfi_endproc
+ 162              	.LFE72:
+ 164 0002 00BF     		.section	.text.SysTick_Handler,"ax",%progbits
+ 165              		.align	2
+ 166              		.global	SysTick_Handler
+ 167              		.thumb
+ 168              		.thumb_func
+ 170              	SysTick_Handler:
+ 171              	.LFB73:
+ 171:Core/Src/stm32f1xx_it.c ****   /* USER CODE BEGIN PendSV_IRQn 0 */
+ 172:Core/Src/stm32f1xx_it.c **** 
+ 173:Core/Src/stm32f1xx_it.c ****   /* USER CODE END PendSV_IRQn 0 */
+ 174:Core/Src/stm32f1xx_it.c ****   /* USER CODE BEGIN PendSV_IRQn 1 */
+ 175:Core/Src/stm32f1xx_it.c **** 
+ 176:Core/Src/stm32f1xx_it.c ****   /* USER CODE END PendSV_IRQn 1 */
+ 177:Core/Src/stm32f1xx_it.c **** }
+ 178:Core/Src/stm32f1xx_it.c **** 
+ 179:Core/Src/stm32f1xx_it.c **** /**
+ 180:Core/Src/stm32f1xx_it.c ****   * @brief This function handles System tick timer.
+ 181:Core/Src/stm32f1xx_it.c ****   */
+ 182:Core/Src/stm32f1xx_it.c **** void SysTick_Handler(void)
+ 183:Core/Src/stm32f1xx_it.c **** {
+ 172              		.loc 1 183 0
+ 173              		.cfi_startproc
+ 174              		@ args = 0, pretend = 0, frame = 0
+ 175              		@ frame_needed = 0, uses_anonymous_args = 0
+ 176              		.loc 1 183 0
+ARM GAS  C:\Users\ROG\AppData\Local\Temp\ccf5rf8y.s 			page 7
+
+
+ 177 0000 08B5     		push	{r3, lr}
+ 178              	.LCFI0:
+ 179              		.cfi_def_cfa_offset 8
+ 180              		.cfi_offset 3, -8
+ 181              		.cfi_offset 14, -4
+ 184:Core/Src/stm32f1xx_it.c ****   /* USER CODE BEGIN SysTick_IRQn 0 */
+ 185:Core/Src/stm32f1xx_it.c **** 
+ 186:Core/Src/stm32f1xx_it.c ****   /* USER CODE END SysTick_IRQn 0 */
+ 187:Core/Src/stm32f1xx_it.c ****   HAL_IncTick();
+ 182              		.loc 1 187 0
+ 183 0002 FFF7FEFF 		bl	HAL_IncTick
+ 184              	.LVL0:
+ 185 0006 08BD     		pop	{r3, pc}
+ 186              		.cfi_endproc
+ 187              	.LFE73:
+ 189              		.text
+ 190              	.Letext0:
+ 191              		.file 2 "c:\\program files (x86)\\gnu tools arm embedded\\5.4 2016q3\\arm-none-eabi\\include\\mach
+ 192              		.file 3 "c:\\program files (x86)\\gnu tools arm embedded\\5.4 2016q3\\arm-none-eabi\\include\\sys\
+ 193              		.file 4 "Drivers/CMSIS/Include/core_cm3.h"
+ 194              		.file 5 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h"
+ARM GAS  C:\Users\ROG\AppData\Local\Temp\ccf5rf8y.s 			page 8
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 stm32f1xx_it.c
+C:\Users\ROG\AppData\Local\Temp\ccf5rf8y.s:20     .text.NMI_Handler:00000000 $t
+C:\Users\ROG\AppData\Local\Temp\ccf5rf8y.s:25     .text.NMI_Handler:00000000 NMI_Handler
+C:\Users\ROG\AppData\Local\Temp\ccf5rf8y.s:38     .text.HardFault_Handler:00000000 $t
+C:\Users\ROG\AppData\Local\Temp\ccf5rf8y.s:43     .text.HardFault_Handler:00000000 HardFault_Handler
+C:\Users\ROG\AppData\Local\Temp\ccf5rf8y.s:57     .text.MemManage_Handler:00000000 $t
+C:\Users\ROG\AppData\Local\Temp\ccf5rf8y.s:62     .text.MemManage_Handler:00000000 MemManage_Handler
+C:\Users\ROG\AppData\Local\Temp\ccf5rf8y.s:76     .text.BusFault_Handler:00000000 $t
+C:\Users\ROG\AppData\Local\Temp\ccf5rf8y.s:81     .text.BusFault_Handler:00000000 BusFault_Handler
+C:\Users\ROG\AppData\Local\Temp\ccf5rf8y.s:95     .text.UsageFault_Handler:00000000 $t
+C:\Users\ROG\AppData\Local\Temp\ccf5rf8y.s:100    .text.UsageFault_Handler:00000000 UsageFault_Handler
+C:\Users\ROG\AppData\Local\Temp\ccf5rf8y.s:114    .text.SVC_Handler:00000000 $t
+C:\Users\ROG\AppData\Local\Temp\ccf5rf8y.s:119    .text.SVC_Handler:00000000 SVC_Handler
+C:\Users\ROG\AppData\Local\Temp\ccf5rf8y.s:131    .text.DebugMon_Handler:00000000 $t
+C:\Users\ROG\AppData\Local\Temp\ccf5rf8y.s:136    .text.DebugMon_Handler:00000000 DebugMon_Handler
+C:\Users\ROG\AppData\Local\Temp\ccf5rf8y.s:148    .text.PendSV_Handler:00000000 $t
+C:\Users\ROG\AppData\Local\Temp\ccf5rf8y.s:153    .text.PendSV_Handler:00000000 PendSV_Handler
+C:\Users\ROG\AppData\Local\Temp\ccf5rf8y.s:165    .text.SysTick_Handler:00000000 $t
+C:\Users\ROG\AppData\Local\Temp\ccf5rf8y.s:170    .text.SysTick_Handler:00000000 SysTick_Handler
+                     .debug_frame:00000010 $d
+
+UNDEFINED SYMBOLS
+HAL_IncTick
